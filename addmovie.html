@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Add movie </title>
+    <meta name = "description" content = "My Add movie">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/movie.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300
+"/>
+  </head>
+  <body>
+    <header>
+      <img src= "images/projector-logo.png" class="image fleft">
+      <nav>
+        <ul class="fright">
+          <li><a href="#"> HOME </a></li>
+          <li><a href="#"> ADD MOVIE </a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="clr"></div>
+      <form class="form_center">
+        <h2> ADD A MOVIE </h2>
+        <ul>
+          <li>
+            <label for "movie-name"> Movie name </label>
+            <input type="text" name="movie-name" id="movie-name" required/>
+          </li>
+          <li>
+            <label for "year"> Year of release </label>
+            <input type="text" name="year" id="year" required>
+          </li>
+          <li>
+          <div class="divide first">
+            <label> Language </label>
+            <select name="language" required>
+              <option value="Tamil"> Tamil </option>
+              <option value="English"> English </option>
+              <option value="Hindi"> Hindi </option>
+            </select>
+          </div>
+          <div class="divide">
+            <label> Rating </label>
+            <select name="rating" required>
+              <option>5</option>
+              <option>4</option>
+              <option>3</option>
+              <option>2</option>
+              <option>1</option>
+            </select>
+          </div>
+          </li>
+          <li>
+            <label for "turl">Thumbnail URL</label>
+            <input type="url" name="turl" id="turl" required>
+          </li>
+          <li>
+            <label for="plot">Plot</label>
+            <textarea name="plot" id="plot" rows="6" required></textarea>
+          </li>
+          <li>
+            <label for "purl">Poster URL</label>
+            <input type="url" name="purl" id="purl" required>
+          </li>
+          <li>
+            <label for="cast">Cast</label>
+            <textarea name="cast" id="cast" rows="6" required></textarea>
+          </li>
+        </ul>
+        <button type="button" class="btn" name="save">save</button>
+      </form>
+      <footer>
+        <a href="#"><img src="images/facebook.png" class="icon"></a>
+        <a href="#"><img src="images/twitter.png" class="icon"></a>
+        <a href="#"><img src="images/instagram.png" class="icon"></a>
+        <img src= "images/projector-logo.png" class="image fright">
+      </footer>
+  </body>
+</html>
